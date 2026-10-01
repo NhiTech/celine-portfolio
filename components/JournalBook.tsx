@@ -3,8 +3,8 @@ export function JournalBook() {
     <div className="relative mx-auto w-full max-w-3xl">
       <div className="mc-panel-dark grid grid-cols-1 sm:grid-cols-2 gap-1 p-1">
         {/* left slot — photo */}
-        <div className="mc-slot relative p-6 flex flex-col items-center justify-center gap-4">
-          <div className="mc-panel-desert mx-auto h-56 w-56 sm:h-64 sm:w-64 overflow-hidden p-2">
+        <div className="mc-slot relative p-3 flex flex-col items-center justify-center gap-3">
+          <div className="mc-panel-desert w-full aspect-square overflow-hidden p-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/celine.jpg"
