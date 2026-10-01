@@ -2,7 +2,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&duration=3000&pause=1000&color=2FA35A&center=true&vCenter=true&width=600&lines=hi%2C+I'm+Celine's+portfolio;now+loading+biomes...;jungle+%E2%86%92+desert+%E2%86%92+the+end" alt="Typing SVG" />
 
-### 🌎 [celine-portfolio.pages.dev](https://celine-portfolio.pages.dev)
+### 🌎 **[→ VIEW LIVE SITE: celine-portfolio.pages.dev ←](https://celine-portfolio.pages.dev)**
+#### the site is already live and hosted on Cloudflare — nothing below is required to view it
 
 ![Next.js](https://img.shields.io/badge/Next.js-2FA35A?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-A0632E?style=for-the-badge&logo=typescript&logoColor=white)
@@ -37,14 +38,21 @@ besides the preview above.
 - Google Fonts: `Press Start 2P` + `VT323`
 - Deployed on **Cloudflare Pages**
 
-## 🧰 run it locally
+---
+
+## 💻 for developers (optional)
+
+The site above is already live and self-contained — you only need the steps
+below if you want to edit the code and run your own local copy.
+
+### run it locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 🚀 deploy
+### deploy your changes
 
 ```bash
 npm run build
