@@ -23,10 +23,13 @@ export function JournalBook() {
           </h2>
           <p className="font-mono-px text-lg leading-snug text-ink/80">
             I&apos;m a Computer Science student at Georgia Tech, concentrating in
-            Media &amp; People — I love building things that feel as good as
-            they work. Most of my time goes into shipping full-stack products
-            end to end, from the first customer interview to the last
-            deployed commit.
+            Media &amp; People. I love building things that help us in our
+            day-to-day lives — tools that quietly make things a little
+            easier.
+          </p>
+          <p className="font-pixel text-[11px] leading-relaxed text-dirt-dark border-l-4 border-gold pl-3">
+            &ldquo;if I&apos;m struggling with something, someone out there
+            is probably struggling with it too.&rdquo;
           </p>
           <p className="font-mono-px text-lg leading-snug text-ink/80">
             Outside of code, I&apos;m a Helen Fellow teaching K-12 kids that AI
