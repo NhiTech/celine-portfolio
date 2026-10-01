@@ -71,6 +71,10 @@ export function Stars() {
   );
 }
 
+export function MoonGlow({ className = "", size = 160 }: { className?: string; size?: number }) {
+  return <div className={`moon-glow ${className}`} style={{ width: size, height: size }} />;
+}
+
 export function Hills() {
   return (
     <div className="hills h-28 sm:h-36">

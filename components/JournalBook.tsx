@@ -3,14 +3,14 @@ export function JournalBook() {
     <div className="relative mx-auto w-full max-w-3xl">
       <div className="mc-panel-dark grid grid-cols-1 sm:grid-cols-2 gap-1 p-1">
         {/* left slot — photo */}
-        <div className="mc-slot relative p-8 flex flex-col items-center justify-center gap-4">
-          <div className="mc-panel-desert h-36 w-36 sm:h-44 sm:w-44 overflow-hidden p-1.5">
+        <div className="mc-slot relative p-6 flex flex-col items-center justify-center gap-4">
+          <div className="mc-panel-desert mx-auto h-56 w-56 sm:h-64 sm:w-64 overflow-hidden p-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/celine.jpg"
               alt="Celine Nhi Vo"
               className="h-full w-full rounded-md object-cover"
-              style={{ objectPosition: "50% 20%" }}
+              style={{ objectPosition: "50% 28%" }}
             />
           </div>
           <p className="font-pixel text-[10px] text-dirt-dark">CELINE.PNG</p>

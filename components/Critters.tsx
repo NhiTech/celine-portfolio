@@ -36,6 +36,65 @@ export function Sheep({ className = "", scale = 1, delay = "0s" }: CritterProps)
   );
 }
 
+export function Creeper({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div
+      className={`critter ${className}`}
+      style={{ ["--s" as string]: scale, animationDelay: delay, filter: "drop-shadow(0 0 6px #5ac75a99)" }}
+    >
+      <div className="relative" style={{ width: 26 * scale, height: 34 * scale }}>
+        <div className="absolute" style={{ background: "#54b843", left: 0, top: 0, width: 26 * scale, height: 34 * scale, borderRadius: 3, boxShadow: "0 3px 0 rgba(0,0,0,0.3)" }} />
+        {/* face */}
+        <div className="absolute" style={{ background: "#132312", left: 5 * scale, top: 6 * scale, width: 5 * scale, height: 6 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 16 * scale, top: 6 * scale, width: 5 * scale, height: 6 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 9 * scale, top: 14 * scale, width: 8 * scale, height: 4 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 7 * scale, top: 18 * scale, width: 4 * scale, height: 5 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 15 * scale, top: 18 * scale, width: 4 * scale, height: 5 * scale }} />
+      </div>
+    </div>
+  );
+}
+
+export function Zombie({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div
+      className={`critter ${className}`}
+      style={{ ["--s" as string]: scale, animationDelay: delay }}
+    >
+      <div className="relative" style={{ width: 20 * scale, height: 36 * scale }}>
+        <div className="absolute rounded-sm" style={{ background: "#4f8a5c", left: 4 * scale, top: 0, width: 12 * scale, height: 10 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 6 * scale, top: 4 * scale, width: 2.5 * scale, height: 2.5 * scale }} />
+        <div className="absolute" style={{ background: "#132312", left: 12 * scale, top: 4 * scale, width: 2.5 * scale, height: 2.5 * scale }} />
+        <div className="absolute" style={{ background: "#3a6ea8", left: 2 * scale, top: 10 * scale, width: 16 * scale, height: 14 * scale, borderRadius: 2, boxShadow: "0 3px 0 rgba(0,0,0,0.3)" }} />
+        <div className="absolute" style={{ background: "#4f8a5c", left: 0, top: 11 * scale, width: 4 * scale, height: 10 * scale }} />
+        <div className="absolute" style={{ background: "#4f8a5c", left: 16 * scale, top: 11 * scale, width: 4 * scale, height: 10 * scale }} />
+        {[4, 11].map((x, i) => (
+          <div key={i} className="absolute" style={{ background: "#2b2b2b", left: x * scale, top: 24 * scale, width: 5 * scale, height: 12 * scale }} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function Skeleton({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div
+      className={`critter ${className}`}
+      style={{ ["--s" as string]: scale, animationDelay: delay }}
+    >
+      <div className="relative" style={{ width: 20 * scale, height: 36 * scale }}>
+        <div className="absolute rounded-sm" style={{ background: "#e9e6d8", left: 4 * scale, top: 0, width: 12 * scale, height: 10 * scale }} />
+        <div className="absolute" style={{ background: "#1c1c1c", left: 6 * scale, top: 4 * scale, width: 2.5 * scale, height: 2.5 * scale }} />
+        <div className="absolute" style={{ background: "#1c1c1c", left: 12 * scale, top: 4 * scale, width: 2.5 * scale, height: 2.5 * scale }} />
+        <div className="absolute" style={{ background: "#d8d4c4", left: 3 * scale, top: 10 * scale, width: 14 * scale, height: 13 * scale, borderRadius: 2, boxShadow: "0 3px 0 rgba(0,0,0,0.3)" }} />
+        {[4, 11].map((x, i) => (
+          <div key={i} className="absolute" style={{ background: "#d8d4c4", left: x * scale, top: 23 * scale, width: 5 * scale, height: 13 * scale }} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function Chicken({ className = "", scale = 1, delay = "0s" }: CritterProps) {
   return (
     <div

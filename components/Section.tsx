@@ -1,11 +1,12 @@
 import { BlockRow } from "./Decor";
 
-type Biome = "jungle" | "desert" | "end";
+type Biome = "jungle" | "desert" | "end" | "night";
 
 const biomeConfig: Record<Biome, { bg: string; heading: string; sub: string }> = {
   jungle: { bg: "biome-jungle", heading: "text-[#eafff0]", sub: "text-[#c9ecd4]" },
   desert: { bg: "biome-desert", heading: "text-[#5a3a1b]", sub: "text-[#8a5a2b]" },
   end: { bg: "biome-end", heading: "text-[#e9d9ff]", sub: "text-[#b89ce0]" },
+  night: { bg: "biome-night", heading: "text-[#8ef08e]", sub: "text-[#aab4e0]" },
 };
 
 export function Section({
