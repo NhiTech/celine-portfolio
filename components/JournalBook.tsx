@@ -32,8 +32,9 @@ export function JournalBook() {
             is probably struggling with it too.&rdquo;
           </p>
           <p className="font-mono-px text-lg leading-snug text-ink/80">
-            Outside of code, I&apos;m a Helen Fellow teaching K-12 kids that AI
-            can be fun and approachable, not scary.
+            Outside of code, I&apos;m a Red Bull Student Ambassador and a
+            Helen Fellow, teaching younger students that AI can be fun and
+            approachable, not scary.
           </p>
         </div>
       </div>
