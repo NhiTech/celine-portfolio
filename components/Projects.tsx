@@ -2,7 +2,7 @@ import { projects } from "@/lib/data";
 import { accentColor } from "@/lib/colors";
 import { Section } from "./Section";
 import { Bubbles } from "./Decor";
-import { Fish, Turtle, Dolphin } from "./Critters";
+import { Fish, Turtle, Dolphin, Boat } from "./Critters";
 
 export function Projects() {
   return (
@@ -12,6 +12,7 @@ export function Projects() {
       <Fish className="top-[55%] right-[6%] z-10" scale={1.1} color="#ffd93d" delay="2s" />
       <Turtle className="bottom-[10%] left-[10%] z-10" scale={1.3} delay="1s" />
       <Dolphin className="top-[10%] right-[12%] z-10" scale={1.2} delay="0.5s" />
+      <Boat className="top-[4%] left-[42%] z-10" scale={1.3} delay="0.8s" />
 
       <div className="grid gap-5 sm:grid-cols-2 relative">
         {projects.map((p) => (

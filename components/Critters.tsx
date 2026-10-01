@@ -163,6 +163,66 @@ export function Dolphin({ className = "", scale = 1, delay = "0s" }: CritterProp
   );
 }
 
+export function Boat({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div className={`boat-float ${className}`} style={{ animationDelay: delay }}>
+      <div className="relative" style={{ width: 48 * scale, height: 24 * scale }}>
+        <div
+          className="absolute"
+          style={{
+            background: "#a9713f",
+            left: 0,
+            top: 8 * scale,
+            width: 48 * scale,
+            height: 12 * scale,
+            clipPath: "polygon(8% 0, 92% 0, 100% 100%, 0 100%)",
+            boxShadow: "0 3px 0 rgba(0,0,0,0.25)",
+          }}
+        />
+        <div className="absolute" style={{ background: "#c58a4f", left: 4 * scale, top: 9 * scale, width: 40 * scale, height: 3 * scale }} />
+        <div className="absolute" style={{ background: "#6b4423", left: 22 * scale, top: -14 * scale, width: 2 * scale, height: 22 * scale }} />
+        <div
+          className="absolute"
+          style={{ background: "#f3efe3", left: 24 * scale, top: -14 * scale, width: 16 * scale, height: 12 * scale, clipPath: "polygon(0 0, 100% 15%, 0 100%)" }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export function Ghast({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  const tentacleHeights = [14, 20, 12, 22, 16, 24, 13, 19, 15];
+  return (
+    <div className={`ghast-float ${className}`} style={{ animationDelay: delay }}>
+      <div className="relative" style={{ width: 40 * scale, height: 60 * scale }}>
+        <div className="absolute rounded-xl" style={{ background: "#e9e9e1", left: 2 * scale, top: 0, width: 36 * scale, height: 26 * scale, boxShadow: "inset 0 -4px 6px rgba(0,0,0,0.08)" }} />
+        {/* sad eyebrows */}
+        <div className="absolute" style={{ background: "#222", left: 8 * scale, top: 9 * scale, width: 8 * scale, height: 2.5 * scale, transform: "rotate(10deg)" }} />
+        <div className="absolute" style={{ background: "#222", left: 24 * scale, top: 9 * scale, width: 8 * scale, height: 2.5 * scale, transform: "rotate(-10deg)" }} />
+        {/* eyes */}
+        <div className="absolute" style={{ background: "#222", left: 10 * scale, top: 13 * scale, width: 3 * scale, height: 3 * scale }} />
+        <div className="absolute" style={{ background: "#222", left: 27 * scale, top: 13 * scale, width: 3 * scale, height: 3 * scale }} />
+        {/* frown */}
+        <div className="absolute" style={{ background: "#222", left: 15 * scale, top: 19 * scale, width: 10 * scale, height: 2.5 * scale }} />
+        {/* tentacles */}
+        {tentacleHeights.map((h, i) => (
+          <div
+            key={i}
+            className="absolute"
+            style={{
+              background: "#d8d8cd",
+              left: (3 + i * 4) * scale,
+              top: 26 * scale,
+              width: 2.5 * scale,
+              height: h * scale,
+            }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function Chicken({ className = "", scale = 1, delay = "0s" }: CritterProps) {
   return (
     <div

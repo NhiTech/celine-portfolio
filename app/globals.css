@@ -237,6 +237,27 @@ body {
   animation: swim-across 10s ease-in-out infinite;
 }
 
+.boat-float {
+  position: absolute;
+  animation: boat-bob 3.2s ease-in-out infinite;
+}
+
+@keyframes boat-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+}
+
+.ghast-float {
+  position: absolute;
+  animation: ghast-drift 7s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.25));
+}
+
+@keyframes ghast-drift {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-14px) translateX(16px); }
+}
+
 @keyframes swim-across {
   0%, 100% { transform: translateX(0) translateY(0); }
   50% { transform: translateX(40px) translateY(-10px); }
