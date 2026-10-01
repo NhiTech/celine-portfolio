@@ -10,7 +10,7 @@ export function JournalBook() {
               src="/celine.jpg"
               alt="Celine Nhi Vo"
               className="h-full w-full rounded-md object-cover"
-              style={{ objectPosition: "50% 28%" }}
+              style={{ objectPosition: "50% 87%" }}
             />
           </div>
           <p className="font-pixel text-[10px] text-dirt-dark">CELINE.PNG</p>

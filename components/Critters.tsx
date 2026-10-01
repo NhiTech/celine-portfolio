@@ -115,6 +115,54 @@ export function Enderman({ className = "", scale = 1, delay = "0s" }: CritterPro
   );
 }
 
+export function Fish({ className = "", scale = 1, delay = "0s", color = "#ff8a3d" }: CritterProps & { color?: string }) {
+  return (
+    <div className={`swim ${className}`} style={{ ["--s" as string]: scale, animationDelay: delay }}>
+      <div className="relative" style={{ width: 22 * scale, height: 14 * scale }}>
+        <div className="absolute rounded-full" style={{ background: color, left: 4 * scale, top: 2 * scale, width: 14 * scale, height: 10 * scale }} />
+        <div className="absolute" style={{ background: color, left: 0, top: 4 * scale, width: 6 * scale, height: 6 * scale, clipPath: "polygon(100% 0, 0 50%, 100% 100%)" }} />
+        <div className="absolute" style={{ background: "#1c1c1c", left: 14 * scale, top: 5 * scale, width: 2 * scale, height: 2 * scale }} />
+      </div>
+    </div>
+  );
+}
+
+export function Turtle({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div className={`swim ${className}`} style={{ ["--s" as string]: scale, animationDelay: delay }}>
+      <div className="relative" style={{ width: 30 * scale, height: 20 * scale }}>
+        <div className="absolute rounded-lg" style={{ background: "#3f9142", left: 6 * scale, top: 2 * scale, width: 18 * scale, height: 14 * scale, boxShadow: "inset 0 0 0 2px #276e2b" }} />
+        <div className="absolute rounded-sm" style={{ background: "#6abf5f", left: 0, top: 6 * scale, width: 7 * scale, height: 6 * scale }} />
+        {[2, 22].map((x, i) => (
+          <div key={i} className="absolute rounded-sm" style={{ background: "#6abf5f", left: x * scale, top: 14 * scale, width: 6 * scale, height: 5 * scale }} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function Dolphin({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div className={`swim ${className}`} style={{ ["--s" as string]: scale, animationDelay: delay }}>
+      <div className="relative" style={{ width: 36 * scale, height: 20 * scale }}>
+        <div
+          className="absolute"
+          style={{
+            background: "#7ea9c2",
+            left: 2 * scale,
+            top: 4 * scale,
+            width: 28 * scale,
+            height: 12 * scale,
+            borderRadius: "60% 40% 50% 50% / 70% 70% 30% 30%",
+          }}
+        />
+        <div className="absolute" style={{ background: "#7ea9c2", left: 10 * scale, top: -4 * scale, width: 8 * scale, height: 8 * scale, clipPath: "polygon(0 100%, 50% 0, 100% 100%)" }} />
+        <div className="absolute" style={{ background: "#1c1c1c", left: 5 * scale, top: 8 * scale, width: 2 * scale, height: 2 * scale }} />
+      </div>
+    </div>
+  );
+}
+
 export function Chicken({ className = "", scale = 1, delay = "0s" }: CritterProps) {
   return (
     <div

@@ -75,6 +75,28 @@ export function MoonGlow({ className = "", size = 160 }: { className?: string; s
   return <div className={`moon-glow ${className}`} style={{ width: size, height: size }} />;
 }
 
+export function Bubbles() {
+  const bubbles = [
+    { left: "8%", size: 8, delay: "0s" },
+    { left: "20%", size: 5, delay: "1.4s" },
+    { left: "35%", size: 7, delay: "0.6s" },
+    { left: "55%", size: 6, delay: "2.1s" },
+    { left: "72%", size: 9, delay: "0.9s" },
+    { left: "88%", size: 5, delay: "1.8s" },
+  ];
+  return (
+    <>
+      {bubbles.map((b, i) => (
+        <div
+          key={i}
+          className="bubble"
+          style={{ left: b.left, bottom: "4%", width: b.size, height: b.size, animationDelay: b.delay }}
+        />
+      ))}
+    </>
+  );
+}
+
 export function Hills() {
   return (
     <div className="hills h-28 sm:h-36">
