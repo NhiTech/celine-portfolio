@@ -95,6 +95,26 @@ export function Skeleton({ className = "", scale = 1, delay = "0s" }: CritterPro
   );
 }
 
+export function Enderman({ className = "", scale = 1, delay = "0s" }: CritterProps) {
+  return (
+    <div
+      className={`critter ${className}`}
+      style={{ ["--s" as string]: scale, animationDelay: delay, filter: "drop-shadow(0 0 8px #a35fe599)" }}
+    >
+      <div className="relative" style={{ width: 20 * scale, height: 52 * scale }}>
+        <div className="absolute" style={{ background: "#120a1a", left: 3 * scale, top: 0, width: 14 * scale, height: 12 * scale, borderRadius: 2 }} />
+        <div className="absolute" style={{ background: "#b37bff", left: 6 * scale, top: 4 * scale, width: 3 * scale, height: 3 * scale, boxShadow: "0 0 4px #b37bff" }} />
+        <div className="absolute" style={{ background: "#b37bff", left: 12 * scale, top: 4 * scale, width: 3 * scale, height: 3 * scale, boxShadow: "0 0 4px #b37bff" }} />
+        <div className="absolute" style={{ background: "#1c1026", left: 5 * scale, top: 12 * scale, width: 10 * scale, height: 22 * scale }} />
+        <div className="absolute" style={{ background: "#1c1026", left: 0, top: 13 * scale, width: 4 * scale, height: 26 * scale }} />
+        <div className="absolute" style={{ background: "#1c1026", left: 16 * scale, top: 13 * scale, width: 4 * scale, height: 26 * scale }} />
+        <div className="absolute" style={{ background: "#1c1026", left: 5 * scale, top: 34 * scale, width: 4 * scale, height: 18 * scale }} />
+        <div className="absolute" style={{ background: "#1c1026", left: 11 * scale, top: 34 * scale, width: 4 * scale, height: 18 * scale }} />
+      </div>
+    </div>
+  );
+}
+
 export function Chicken({ className = "", scale = 1, delay = "0s" }: CritterProps) {
   return (
     <div

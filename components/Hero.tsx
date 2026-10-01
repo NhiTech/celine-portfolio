@@ -2,6 +2,7 @@ import { PixelCloud, PixelBit, SunGlow, Hills } from "./Decor";
 import { Pig, Sheep, Chicken } from "./Critters";
 import { TypingName } from "./TypingName";
 import { JournalBook } from "./JournalBook";
+import { TeleportOrb } from "./TeleportOrb";
 
 export function Hero() {
   return (
@@ -21,6 +22,7 @@ export function Hero() {
         <p className="font-mono-px text-2xl text-ink/80 max-w-xl">
           CS student at Georgia Tech, crafting cozy corners of the internet
         </p>
+        <TeleportOrb targetId="education" className="mt-2" />
       </div>
 
       <div className="relative mt-14">

@@ -40,11 +40,51 @@
   --font-mono-px: var(--font-vt323);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--font-vt323), monospace;
   font-size: 19px;
+}
+
+/* ---------- ender pearl teleport orb ---------- */
+.ender-orb {
+  background: radial-gradient(circle at 35% 30%, #bdfff0 0%, #35d9b5 35%, #0f6e5c 70%, #042e26 100%);
+  box-shadow:
+    0 0 18px 4px rgba(53, 217, 181, 0.55),
+    0 0 40px 10px rgba(130, 60, 220, 0.3),
+    inset 0 0 12px rgba(0, 0, 0, 0.35);
+  animation: orb-pulse 2.2s ease-in-out infinite;
+  cursor: pointer;
+  border: none;
+}
+
+@keyframes orb-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
+.teleport-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(130, 60, 220, 0.55) 0%, rgba(53, 217, 181, 0.35) 45%, transparent 75%);
+  opacity: 0;
+}
+
+.teleport-flash.active {
+  animation: teleport-pulse 0.7s ease-out forwards;
+}
+
+@keyframes teleport-pulse {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 /* ---------- rich daytime sky with glow ---------- */
