@@ -1,5 +1,5 @@
 import { PixelCloud, PixelBit, SunGlow, Hills } from "./Decor";
-import { Pig, Sheep, Chicken } from "./Critters";
+import { Pig, Sheep, Chicken, Cow, Bee, Wolf, Villager } from "./Critters";
 import { TypingName } from "./TypingName";
 import { JournalBook } from "./JournalBook";
 import { TeleportOrb } from "./TeleportOrb";
@@ -32,6 +32,11 @@ export function Hero() {
       <Pig className="bottom-6 left-[15%] z-10" scale={1.3} delay="0s" />
       <Sheep className="bottom-4 right-[20%] z-10" scale={1.2} delay="1.5s" />
       <Chicken className="bottom-8 left-[46%] z-10" scale={1.4} delay="3s" />
+      <Cow className="bottom-2 right-[6%] z-10" scale={1.2} delay="2.2s" />
+      <Wolf className="bottom-4 left-[4%] z-10" scale={1.1} delay="1s" />
+      <Villager className="bottom-2 left-[62%] z-10" scale={1} delay="0.6s" />
+      <Bee className="bottom-24 left-[36%] z-10" scale={1.2} delay="0.3s" />
+      <Bee className="bottom-28 right-[36%] z-10" scale={1} delay="1.6s" />
 
       <Hills />
     </section>

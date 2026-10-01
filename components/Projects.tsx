@@ -2,7 +2,7 @@ import { projects } from "@/lib/data";
 import { accentColor } from "@/lib/colors";
 import { Section } from "./Section";
 import { Bubbles } from "./Decor";
-import { Fish, Turtle, Dolphin, Boat } from "./Critters";
+import { Fish, Turtle, Dolphin, Boat, Axolotl, Squid } from "./Critters";
 
 export function Projects() {
   return (
@@ -13,6 +13,8 @@ export function Projects() {
       <Turtle className="bottom-[10%] left-[10%] z-10" scale={1.3} delay="1s" />
       <Dolphin className="top-[10%] right-[12%] z-10" scale={1.2} delay="0.5s" />
       <Boat className="top-[4%] left-[42%] z-10" scale={1.3} delay="0.8s" />
+      <Axolotl className="bottom-[16%] right-[22%] z-10" scale={1.2} delay="1.4s" />
+      <Squid className="top-[30%] left-[22%] z-10" scale={1} delay="0.7s" />
 
       <div className="grid gap-5 sm:grid-cols-2 relative">
         {projects.map((p) => (

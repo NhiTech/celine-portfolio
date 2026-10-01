@@ -1,4 +1,5 @@
 import { PixelCloud, PixelBit, SunGlow, Hills } from "./Decor";
+import { Slime } from "./Critters";
 import { contact } from "@/lib/data";
 
 export function Contact() {
@@ -9,6 +10,8 @@ export function Contact() {
       <PixelCloud className="bottom-24 right-[16%]" size={56} />
       <PixelBit className="top-10 right-[22%]" color="#ffd36b" delay="0.8s" />
       <PixelBit className="bottom-32 left-[24%]" color="#4aedd9" delay="1.6s" />
+      <Slime className="bottom-16 left-[12%] z-10" scale={1.2} delay="0s" />
+      <Slime className="bottom-20 right-[14%] z-10" scale={0.9} delay="0.6s" />
 
       <div className="relative max-w-lg mx-auto">
         <div className="mc-achievement inline-block px-6 py-4 mb-6">
